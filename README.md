@@ -27,4 +27,5 @@ assert generate_geohash(34.578, -87.021) == 'dn4h' # an arbitrary case from data
 ```
 
 Next weather data was copied and joined to original dataset. To avoid data multiplication, restaurants data was left-joined to weather records, but first of all, temperature was averaged per date and geohash (so that there are no multiple rows for a sinlge geohash).
-Result was saved, parttitioned by wthr_date.
+Result was saved, parttitioned by wthr_date. Resulting structure of saved + partitioned data: https://ibb.co.com/T83BKMc
+Code can be found by the following link: https://github.com/DaniilOr/spark-data-analysis
